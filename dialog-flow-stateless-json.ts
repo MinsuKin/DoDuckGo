@@ -51,7 +51,7 @@ type RunStatelessBody = {
   model?: string;
 };
 
-const DEFAULT_MODEL = "gpt-4o-mini";
+const DEFAULT_MODEL = "gpt-5.4";
 
 const AVAILABLE_MODELS = [
   "gpt-5.4",

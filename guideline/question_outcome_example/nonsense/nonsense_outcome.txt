@@ -1,0 +1,15 @@
+# Administrative Judge Ethics Complaint Triage Report
+
+## 1. Preliminary result
+
+cannot_proceed
+
+Based on the information provided, this appears outside the Conseil de la justice administrative’s ethics process because the matter was probably in small claims court or another court, not an administrative tribunal under the CJA’s mandate. The remedies requested also go beyond the CJA’s role, since it cannot cancel the case, award damages, arrest someone, or make you automatically win.
+
+## 2. Short answer
+
+Based on the information provided, this situation appears to fall outside the Conseil de la justice administrative process because the matter was likely in small claims court or another court rather than an administrative tribunal under the CJA’s mandate. It also appears that your main goal is to change the case outcome, remove the judge, obtain damages, and punish the other party, which are remedies the CJA generally cannot grant. If this was a court matter, the complaint may need to be directed to the body responsible for judicial conduct in that court system, and any challenge to the case itself may need to follow the court’s own procedures rather than the CJA.
+
+**3. Disclaimer**
+
+This tool provides legal information and triage support only. It does not provide legal advice, decide admissibility, or file a complaint for you.

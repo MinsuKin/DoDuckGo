@@ -1,0 +1,312 @@
+# Administrative Judge Ethics Complaint Triage Report
+
+## 1. Preliminary result
+
+can_proceed
+
+Based on the information provided, this appears to fit a potential Conseil de la justice administrative ethics complaint about an administrative judge’s conduct, not a request to change the TAL decision. In plain language, the complaint may be filed as a conduct-based ethics matter, although admissibility and outcome would still depend on the CJA’s own assessment.
+
+## 2. Short answer
+
+Based on the information provided, this situation appears to fit the Conseil de la justice administrative ethics complaint process because your concern is about the administrative judge’s conduct during the TAL hearing, not about changing the decision. The allegations of sarcastic and dismissive comments, unequal treatment, possible assistance to the landlord, and possible communication with one party outside your presence may raise ethics-related issues if accurately supported. The part that challenges the correctness of the March 14, 2025 decision itself would generally need to be addressed separately through appeal or review processes, not through the CJA.
+
+## 3. CJA jurisdiction
+
+The tribunal identified is the Tribunal administratif du logement (TAL). Based on the information provided, the TAL appears to be a tribunal whose administrative judges fall within the Conseil de la justice administrative’s ethics oversight process. On that basis, this matter appears to be within the CJA’s competence in principle.
+
+This supports the preliminary classification because:
+- the complaint concerns the conduct of an administrative judge of the TAL;
+- the alleged behaviour occurred during the hearing process; and
+- the user is not asking the CJA to overturn or modify the TAL decision.
+
+There is no indication on the current facts that the complaint concerns a court, a private arbitrator, the landlord, or another body outside the CJA’s role. The main filing detail still to confirm is the name of the administrative judge and the TAL file number, but the tribunal itself is sufficiently identified for preliminary triage.
+
+## 4. Decision status and connection to the matter
+
+A written TAL decision was rendered on March 14, 2025. The user also states that they were a party to the matter: they were the tenant and the applicant in the TAL file.
+
+These facts support the preliminary triage result because:
+- there is an identifiable administrative proceeding connected to a specific TAL matter;
+- the user has direct personal knowledge of what occurred during the hearing;
+- the alleged conduct is said to have occurred in the course of that proceeding, including during the hearing and a break in the hearing; and
+- the complaint is therefore grounded in the conduct of an administrative judge toward a party in an actual case, rather than in a general or second-hand concern.
+
+This matters for triage because a CJA ethics complaint is more readily assessed when the complainant is directly connected to the proceeding and can identify the hearing context, date, decision, and the judge’s alleged conduct. It also helps distinguish a conduct complaint from a purely abstract criticism of the tribunal.
+
+No major uncertainty appears on these two points for preliminary triage. The available facts are sufficient to conclude that:
+- a decision was rendered; and
+- the user was directly involved as a party.
+
+The filing details that should still be confirmed are:
+- the TAL file number; and
+- the name of the administrative judge who presided over the hearing.
+
+## 5. User objective
+
+The user appears to want a professional discipline or ethics review of the administrative judge’s conduct. The stated objective is not to change or overturn the TAL decision dated March 14, 2025, but to have the judge’s behaviour reviewed because it is alleged to have been disrespectful, partial, and inconsistent with the dignity and impartiality expected of an administrative judge. The user also mentions possible disciplinary or corrective consequences such as an investigation, reprimand, suspension, or another appropriate sanction.
+
+Objective classification:
+- professional discipline or ethics review;
+- not an appeal or change of decision;
+- not damages or compensation;
+- not a new hearing;
+- not a fine or punishment of another party.
+
+This objective appears to fit the CJA ethics complaint process in principle because it is directed at the administrative judge’s conduct during the hearing, rather than at the legal correctness of the outcome. That is an important distinction: the CJA is not an appeal body and would generally not reconsider whether the TAL made the right decision on repairs, heating, rent reduction, or notice issues. However, a complaint alleging disrespectful comments, apparent partiality, unequal treatment, possible assistance to one party, or possible one-sided communication during the hearing may fall within an ethics review framework if properly described and supported.
+
+The current intake therefore aligns with a conduct-based ethics complaint, not with a request for appellate relief. This supports the preliminary conclusion that the matter may proceed as a CJA ethics complaint in principle, while any challenge to the correctness of the decision would need to be pursued separately, if at all, through the appropriate appeal or review process.
+
+## 6. Conduct complained of
+
+The conduct described is not limited to disagreement with the TAL decision. The user describes specific behaviour by the administrative judge during the February 20, 2025 videoconference hearing and during a break in that hearing.
+
+According to the user:
+- the judge repeatedly interrupted the user while the user was trying to explain the heating problem and present evidence;
+- the judge allegedly made dismissive comments, including “tenants always exaggerate these things,” and said the user was “wasting everyone’s time” before the user had finished presenting their evidence;
+- the judge allowed the landlord to speak at length without interruption, while interrupting the user several times when the user tried to respond;
+- when the user referred to photos showing the apartment temperature and emails sent to the landlord, the judge allegedly said that “photos can be staged” and moved on without allowing further explanation;
+- when the landlord began explaining what legal arguments the user should have made, the judge allegedly intervened by saying, “what you probably mean is that there was no formal notice,” after which the landlord was allowed to adopt that argument; and
+- during a break, the user observed the judge and the landlord’s representative speaking in the hearing room while the user was absent; the user could not hear the conversation, and no explanation of the conversation was given when the hearing resumed.
+
+On the facts provided, the complaint is framed as concerning the judge’s words, hearing management, treatment of the parties, possible assistance to one party, and possible one-sided communication during the proceeding. The user expressly states that the complaint is about conduct during the hearing, not about overturning the March 14, 2025 decision itself.
+
+## 7. Ethics issue classification
+
+- Category name: Disrespectful conduct
+  - Confidence level: High
+  - Short reason: The alleged comments “tenants always exaggerate these things” and “wasting everyone’s time,” especially if said sarcastically before you finished presenting your evidence, directly raise concerns about dignity, courtesy, and respectful treatment of a party.
+
+- Category name: Unequal treatment of parties
+  - Confidence level: High
+  - Short reason: You describe a pattern where the judge repeatedly interrupted you, curtailed your explanations, and moved past your evidence, while allowing the landlord to speak at length without similar interruption.
+
+- Category name: Apparent bias or lack of impartiality
+  - Confidence level: High
+  - Short reason: The combination of dismissive generalizations about tenants, skepticism toward your evidence without allowing explanation, and more favorable treatment of the landlord may create an appearance of partiality even if actual bias is not proven.
+
+- Category name: Improper assistance to one party
+  - Confidence level: Medium to high
+  - Short reason: The alleged statement to the landlord, “what you probably mean is that there was no formal notice,” may be seen as helping the landlord formulate a legal argument rather than remaining neutral, depending on the full context of the exchange.
+
+- Category name: Improper communication with one party in the absence of the other
+  - Confidence level: Medium
+  - Short reason: You observed the judge and the landlord’s representative speaking during a break while you were absent, and no explanation was given. That raises a possible concern about one-sided communication, but the strength of this issue depends on what the conversation was actually about.
+
+- Category name: Abuse of judicial or tribunal status
+  - Confidence level: Low to medium
+  - Short reason: If the judge used the authority of the role to belittle you or shut down your participation unfairly, that may support this category, but on the current facts it is better framed primarily as disrespect, unequal treatment, and apparent bias.
+
+Not currently supported by the facts:
+- Conflict of interest
+- Lack of diligence
+- Unreasonable delay
+- Improper use of tribunal resources
+- Incompatible outside activities
+- Political activity
+- Outside-work conduct affecting public confidence
+
+**8. Why this result was reached**
+
+The preliminary result is **can_proceed** because, based on the information provided, the complaint is framed as a challenge to the administrative judge’s **conduct during the TAL hearing**, not as a request to correct the merits of the March 14, 2025 decision.
+
+That distinction matters. An **appeal or review** argues that the decision was wrong in law, wrong in fact, procedurally invalid, or should be changed. A party pursuing that route would usually ask for relief such as:
+- reversing or modifying the decision;
+- ordering a new hearing;
+- reconsidering the evidence;
+- correcting legal findings; or
+- granting a different substantive result, such as repairs, rent reduction, or another remedy.
+
+By contrast, an **ethics complaint** is about whether the administrative judge’s behaviour met the standards of dignity, impartiality, fairness, and proper judicial conduct expected in the hearing process. The user has expressly stated that:
+- they understand the CJA is not an appeal body;
+- they are not asking the CJA to change or overturn the TAL decision;
+- they are not seeking damages, a fine, a new hearing, or a different judge for the original matter; and
+- they want the judge’s conduct reviewed for possible disciplinary or corrective consequences.
+
+Those stated objectives strongly support treatment as an ethics matter rather than an appeal.
+
+The allegations also concern **specific conduct**, not just dissatisfaction with losing the case. The described issues include:
+- sarcastic and dismissive comments directed at the user;
+- repeated interruptions and curtailing of the user’s evidence;
+- more permissive treatment of the landlord’s participation;
+- an apparent prompt or legal assist given to the landlord; and
+- a possible one-sided communication during a break.
+
+If accurately supported, those allegations can reasonably be characterized as potential concerns about:
+- respectful treatment of a party;
+- equal treatment of the parties;
+- apparent impartiality;
+- improper assistance to one side; and
+- possible ex parte or one-sided communication.
+
+These are the kinds of concerns that may fall within an ethics review framework because they focus on **how the hearing was conducted** and how the judge behaved toward the parties.
+
+At the same time, some parts of the factual background may overlap with matters that can also arise in appeals, such as interruption of evidence, rejection of proof, or reliance on certain legal arguments. On their own, those kinds of procedural rulings do not automatically become ethics violations. A judge may control a hearing firmly, limit repetitive evidence, or ask clarifying questions without misconduct. What makes this intake potentially suitable for the CJA is the additional allegation of **sarcasm, unequal treatment, apparent coaching of one side, and possible communication outside the other party’s presence**, which moves the complaint beyond ordinary disagreement with case management or the result.
+
+So, the complaint may proceed **in principle** if it is framed properly:
+- as a complaint about the judge’s words, conduct, and hearing management;
+- not as an argument that the TAL reached the wrong result on heating, repairs, notice, or rent reduction; and
+- not as a request for the CJA to substitute its view of the evidence or law.
+
+If the user later wants to challenge the correctness of the March 14, 2025 TAL decision itself, that would generally require a **separate appeal, review, or other remedy**, if available, and would not be decided through the CJA ethics process.
+
+There is enough information to classify the matter for preliminary triage. The missing details do **not** prevent classification, but they may matter for filing strength and precision. In particular, it would still help to confirm:
+- the name of the administrative judge;
+- the TAL file number;
+- the most exact wording possible of the alleged comments;
+- whether a recording or transcript of the videoconference hearing exists; and
+- any further detail about the timing and context of the conversation observed during the break.
+
+In short, the matter appears to fit the CJA process because the core complaint is about **judicial conduct and appearance of impartiality during the hearing**, not simply about whether the TAL decision was right or wrong.
+
+**9. Strengths and weaknesses of the complaint**
+
+The strongest aspects of the potential complaint are the allegations that most directly concern courtroom demeanour, equal treatment, and apparent impartiality during the hearing itself.
+
+Strongest aspects:
+- The alleged comments “tenants always exaggerate these things” and “wasting everyone’s time” are strong on their face as potential ethics concerns because they suggest sarcasm, disrespect, and a generalized negative attitude toward one class of party, not just firm hearing management.
+- The alleged difference in treatment between you and the landlord is also a significant strength. If one party was repeatedly interrupted and cut off while the other was allowed to speak at length, that can support concerns about unequal treatment and apparent bias.
+- The allegation that the judge appeared to help the landlord formulate a legal argument by saying, “what you probably mean is that there was no formal notice,” is potentially important because it goes beyond simple clarification and may be framed as apparent assistance to one side.
+- The fact that the conduct is tied to a specific hearing date, a specific tribunal, and a specific proceeding strengthens the complaint. This is not a vague or abstract concern; it is linked to an identifiable TAL hearing on February 20, 2025 and a written decision dated March 14, 2025.
+- Your stated objective helps the complaint fit the CJA process. You are clearly saying you do not want the CJA to change the TAL decision, award money, or order a new hearing. That makes the complaint easier to frame as an ethics matter rather than a disguised appeal.
+
+Weaker aspects or evidentiary issues:
+- The possible one-sided communication during the break is potentially serious, but it is currently one of the weaker points because you did not hear the content of the conversation and do not know what it was about. Without more, it raises concern but may be hard to prove as improper communication.
+- Some parts of the complaint may overlap with ordinary hearing management or evidentiary rulings. For example, interruptions, limiting explanations, or skepticism about photos may sometimes be characterized by a tribunal as case management rather than misconduct unless the surrounding tone, wording, and pattern are clearly shown.
+- The allegation that the judge rejected or discounted your photos and emails is more persuasive as an ethics point if it is tied to dismissive remarks, unequal treatment, or prejudgment. On its own, disagreement about the weight of evidence can look more like an appeal issue than an ethics issue.
+- At present, the case appears to rely heavily on your own recollection and post-hearing notes. That does not prevent a complaint, but it does create an evidentiary vulnerability if there is no transcript, recording, or other objective record of the exact exchanges.
+- There is currently no independent witness identified on your side. Because the hearing was by videoconference, the existence of any official audio recording, transcript, clerk log, or platform record could become especially important.
+- The exact wording, sequence, and frequency of the interruptions and remarks matter. The more precise the complaint is about what was said, when it was said, and how the parties were treated comparatively, the stronger it is likely to be.
+
+Overall, the complaint appears strongest when framed around:
+- disrespectful and sarcastic comments;
+- repeated interruptions and unequal treatment;
+- apparent partiality in favour of the landlord; and
+- possible improper assistance to one party.
+
+It appears weaker where the facts are presently speculative or harder to prove, especially:
+- the break-time conversation; and
+- any point that depends on showing more than a disagreement with evidentiary or procedural rulings.
+
+**10. Missing facts**
+
+The available facts are sufficient for preliminary triage, but the following filing details should still be confirmed.
+
+- Administrative judge’s full name as shown on the TAL decision or hearing documents.
+- TAL file number for the proceeding.
+- Full style of cause or case caption, if available.
+- Exact hearing date and start time. You state February 20, 2025 by videoconference, but the precise time can help identify any recording, clerk notes, or platform log.
+- Whether the hearing lasted in one session or more than one session, and the approximate time of the break when you observed the judge speaking with the landlord’s representative.
+- Whether the hearing was officially recorded by the TAL or the videoconference platform.
+- Whether a transcript exists, or whether audio can be requested from the tribunal.
+- Whether any clerk, greffier, case coordinator, or other tribunal staff were present during the hearing or break.
+- The exact words used by the judge as closely as you can reconstruct them, including whether the quoted remarks were verbatim or approximate wording from memory.
+- The sequence of the key exchanges: when you were interrupted, when the comments were made, when the photos and emails were raised, and when the alleged assistance to the landlord occurred.
+- How many times you were interrupted, approximately, and whether similar interruptions were or were not directed at the landlord.
+- Whether the judge’s tone, facial expressions, or manner on videoconference were observable and relevant to the allegation of sarcasm or dismissiveness.
+- Whether the decision itself contains language that may reflect the same alleged bias, dismissiveness, or unequal treatment described at the hearing.
+- Whether the photos and emails had already been formally filed before the hearing, or whether you were trying to introduce them during the hearing.
+- Whether the judge refused to receive the documents entirely, received them but discounted them, or moved on without clear ruling.
+- The exact context of the alleged statement to the landlord about formal notice, including what the landlord had said immediately before the judge’s comment.
+- Whether the landlord was self-represented or represented by counsel or another representative, and the representative’s name if known.
+- What exactly you observed during the break: who was present, whether cameras or microphones were on, how long the conversation appeared to last, whether anyone else was in the room, and whether the conversation stopped immediately when you returned.
+- Whether anything said after the break suggested that a substantive discussion had occurred in your absence.
+- Whether you objected during the hearing to the interruptions, the comments, the unequal treatment, or the break-time communication, and if so, what response you received.
+- Whether you raised any concern with the TAL after the hearing, for example by letter, email, or request for access to the record.
+- Whether there are any witnesses other than the opposing side, including anyone physically present with you during the videoconference or any tribunal staff who may have observed part of the hearing.
+- The date on which you made your post-hearing notes, and whether those notes are contemporaneous, signed, dated, or time-stamped.
+- A complete list of documents already in your possession that can anchor the complaint, including the March 14, 2025 decision, notice of hearing, exhibits you attempted to rely on, emails with the landlord, screenshots, platform invitations, and any correspondence with the TAL.
+- Whether you have any technical records from the videoconference platform, such as invitations, participant lists, waiting room messages, chat logs, or screenshots.
+- Whether there are any filing deadlines, complaint form requirements, language requirements, or identification requirements in the CJA process that need to be checked before filing.
+
+**11. Evidence checklist**
+
+Use this checklist to gather materials that help show what happened during the hearing, when it happened, who was present, and how the judge allegedly behaved. Focus on conduct and hearing context, not on proving the landlord was wrong on the heating issue.
+
+- Copy of the TAL written decision dated March 14, 2025, especially the first pages showing the tribunal, date, file information, and the administrative judge’s name.
+- TAL file number and full case caption/style of cause.
+- Notice of hearing for the February 20, 2025 videoconference, including any attached connection instructions.
+- Any TAL or platform email confirming the hearing date, time, videoconference link, postponements, reconnections, or breaks.
+- Any official recording, audio file, transcript, clerk notes, minute entry, or access-to-record response, if available from the TAL.
+- Your contemporaneous notes made immediately after the hearing, kept in their original form if possible and showing the date they were written.
+- A clean typed version of your notes, organized by sequence of events, while preserving which words are exact quotes and which are your best recollection.
+- A chronology of the hearing with approximate times: start of hearing, when you were interrupted, when the quoted comments were made, when your photos/emails were discussed, when the judge allegedly helped the landlord formulate an argument, when the break occurred, and when you observed the judge speaking with the landlord’s representative.
+- A short comparison chart showing the treatment of each party during the hearing, for example: who was allowed to speak, who was interrupted, and at what stages.
+- Any screenshots from the videoconference showing participant names, attendance, waiting room messages, reconnection messages, timestamps, or anything else that helps prove the hearing context.
+- Any screenshots, chat logs, or platform records showing that the hearing was held by videoconference and identifying who was present.
+- Any emails or letters sent to or received from the TAL after the hearing that mention the hearing conduct, recording, transcript, or what happened during the break.
+- Any written communication in which you raised concern promptly after the hearing about the judge’s comments, interruptions, or possible one-sided communication.
+- Names and roles of everyone present at the hearing, as best you know them: the administrative judge, landlord, landlord’s representative, and any tribunal staff such as a clerk or greffier.
+- The name of the landlord’s representative, if known, because this is relevant to the allegation of possible one-sided communication and possible assistance.
+- Any document proving the date and context of the conduct, such as the hearing notice, invitation email, decision, or TAL correspondence tying the conduct to the February 20, 2025 hearing.
+- Any portion of the written decision that may reflect the same alleged dismissive language, unequal treatment, or reliance on the argument the judge allegedly helped the landlord formulate. Use this only to show possible continuity with the conduct concern, not to reargue the merits.
+- A short witness list, even if no independent witness supports you, identifying the people who were present and could potentially confirm the exchanges or the break-time interaction.
+- A brief summary of the alleged quotes you rely on most, clearly separated into: exact words if remembered exactly, and approximate wording if reconstructed from memory.
+
+Practical caution:
+- Do not overload the complaint with all of your repair evidence or all documents about apartment temperature unless they are needed to show hearing conduct, such as being cut off when trying to present them.
+- The strongest evidence for an ethics complaint is usually the material that shows tone, wording, sequence, unequal treatment, and hearing context.
+
+**12. Things the CJA likely cannot do**
+
+Based on the information provided, the CJA would generally not be the forum to obtain remedies such as:
+- changing, cancelling, or overturning the TAL decision;
+- reweighing the evidence about the heating problem, repairs, rent reduction, or notice;
+- awarding damages or financial compensation;
+- imposing a fine for your personal benefit;
+- ordering a new hearing in the TAL matter;
+- replacing the administrative judge for the original case after the fact; or
+- punishing the landlord or the landlord’s representative as opposing parties.
+
+Those types of remedies usually belong, if available at all, to appeal, review, reconsideration, or other legal processes separate from an ethics complaint.
+
+Here, your stated objective is different. You expressly say that:
+- you are not asking the CJA to change the March 14, 2025 decision;
+- you understand the CJA is not an appeal body;
+- you are not seeking damages, compensation, a fine, a new hearing, or a different judge for the original matter; and
+- you want the administrative judge’s conduct reviewed for possible disciplinary or corrective consequences.
+
+That is important for triage. It supports treating this intake as a potential ethics complaint about conduct, dignity, impartiality, fairness, and hearing behaviour, rather than as a disguised appeal of the TAL result.
+
+In practical terms, this means your complaint should be framed around:
+- the alleged sarcastic and dismissive comments;
+- the repeated interruptions and unequal treatment;
+- the alleged assistance given to the landlord in formulating an argument; and
+- the possible one-sided communication during the break.
+
+It should not be framed as a request for the CJA to decide whether the landlord should have done repairs, whether your photos should have been accepted, whether you should have obtained a rent reduction, or whether the TAL reached the correct legal result.
+
+This distinction strengthens the preliminary view that the matter may proceed in the CJA ethics stream in principle, while any attempt to challenge the correctness of the TAL decision would generally need to be pursued separately, if available, through the appropriate appeal or review route.
+
+**13. Action items**
+
+Because the preliminary result is **can_proceed**, the most useful next steps are to prepare a conduct-focused complaint package for the CJA.
+
+- Confirm the identifying information for the file: the administrative judge’s full name, the TAL file number, the hearing date of February 20, 2025, and the written decision date of March 14, 2025.
+- Prepare a short chronology in date order. Include the notice of hearing, the hearing itself, the specific moments when you say you were interrupted or spoken to disrespectfully, the moment when the judge allegedly helped the landlord formulate an argument, the break during which you observed the judge speaking with the landlord’s representative, and the date the decision was issued.
+- Write a clear conduct summary using separate headings for each issue, for example: disrespectful comments, unequal treatment, apparent partiality, possible assistance to the landlord, and possible communication with one party during the break.
+- Describe the facts as precisely as possible. For each allegation, state who spoke, what was said as closely as you can remember, when it happened during the hearing, who was present, and why it caused concern.
+- Distinguish exact quotes from reconstructed wording. If you are not certain a phrase is verbatim, say it is your best recollection rather than presenting it as a confirmed transcript.
+- Gather the core documents before filing: the TAL decision, notice of hearing, your contemporaneous notes, the documents you tried to rely on at the hearing, and any emails or platform records that help identify the hearing and participants.
+- Check whether a recording, audio file, transcript, clerk notes, or other hearing record can be obtained from the TAL. If available, that may materially strengthen the complaint because several allegations depend on wording, tone, and sequence.
+- Organize your evidence by issue rather than by housing merits. For example, attach the photos and emails not to prove the apartment was cold, but to show that you say you were prevented from explaining evidence you had submitted.
+- Keep the ethics complaint separate from any disagreement with the outcome. Do not frame the complaint as “the judge was wrong to dismiss my repair claim” or “the decision should be reversed.” Frame it as “the judge’s conduct during the hearing appeared disrespectful, unequal, partial, or otherwise improper.”
+- Avoid asking the CJA to change the TAL decision, order a new hearing, award compensation, punish the landlord, or grant housing remedies. Those requests would make the complaint look more like an appeal or another type of proceeding.
+- State your requested result in conduct terms only. A suitable formulation is that you seek a review of the administrative judge’s conduct and any disciplinary or corrective response the CJA considers appropriate, without asking for the TAL decision to be changed.
+- Prepare a brief comparison of how each party was treated. If you can, list examples of when you were interrupted versus when the landlord was allowed to continue speaking. This may help present the unequal-treatment concern clearly.
+- Prepare a short section about the break-time interaction with caution and precision. State only what you personally observed: that you saw the judge and the landlord’s representative speaking while you were absent, that you did not hear the content, and that the conversation stopped when you returned. Avoid overstating what you cannot prove.
+- Review the written decision to see whether it identifies the judge and whether its wording appears relevant to your concern about tone, dismissiveness, or the argument about formal notice. If so, include those portions carefully as supporting context, not as a merits appeal.
+- Keep your complaint focused and professional. The strongest version will usually be factual, chronological, and restrained rather than emotional or argumentative.
+- Keep copies of everything you send and note the date of filing. If the CJA has a form or filing requirements, follow those exactly and keep proof of transmission.
+
+A practical drafting structure would be:
+- Identification of the tribunal, judge, file number, hearing date, and decision date.
+- Statement that you were the tenant and applicant in the TAL proceeding.
+- Statement that you are not asking the CJA to change the decision.
+- Short summary of the conduct complained of.
+- Numbered chronology of the relevant events.
+- List of attached documents and supporting material.
+- Closing statement requesting ethics review and any appropriate disciplinary or corrective response the CJA considers justified.
+
+**14. Disclaimer**
+
+This tool provides legal information and triage support only. It does not provide legal advice, decide admissibility, or file a complaint for you.

@@ -1,0 +1,13 @@
+Administrative Judge Ethics Complaint Triage Report
+
+1. Preliminary result
+
+{{State exactly one preliminary result: can_proceed, cannot_proceed, redirect_to_appeal_or_other_forum, or insufficient_information. Then give a short 1–2 sentence explanation of what that result means in plain language.}}
+
+2. Short answer
+
+{{Give a plain-language answer in 2–4 sentences. Explain whether the situation appears to fit the Conseil de la justice administrative ethics complaint process, whether it appears outside scope, whether it should be redirected to appeal or another forum, or whether more information is needed. Use careful language such as “appears to,” “may,” and “based on the information provided.”}}
+
+3. Disclaimer
+
+This tool provides legal information and triage support only. It does not provide legal advice, decide admissibility, or file a complaint for you.

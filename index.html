@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Recours — Aide juridique propulsée par l'IA</title>
-<meta name="description" content="Un assistant qui vous aide à porter plainte, rédiger une mise en demeure, et faire valoir vos droits au Québec. En français, en anglais, en arabe." />
+<title>DoDuck Go — Don't be a quack</title>
+<meta name="description" content="DoDuck Go helps triage Quebec administrative judge ethics complaints." />
 
 <!-- Fonts: editorial serif for display + a humanist sans for body, plus a mono for accents -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -299,93 +299,27 @@ h1.headline .small {
   opacity: 0.6;
 }
 
-/* ========== Pillars section ========== */
-.pillars {
-  background: var(--ink-soft);
-  border-top: 1px solid var(--rule-soft);
-  border-bottom: 1px solid var(--rule-soft);
-}
-.pillars-inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: 100px 32px;
-}
-.section-head {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 60px;
-  align-items: end;
-  margin-bottom: 80px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid var(--rule);
-}
-.section-head h2 {
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(36px, 4vw, 56px);
-  line-height: 1.05;
-  letter-spacing: -0.01em;
-}
-.section-head h2 em { color: var(--bronze-lt); font-style: italic; }
-.section-head p {
-  color: var(--paper-dim);
-  font-size: 15px;
-  line-height: 1.7;
-  max-width: 56ch;
-}
-
-.pillar-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  border-top: 1px solid var(--rule-soft);
-}
-.pillar {
-  padding: 48px 32px 48px 0;
-  border-right: 1px solid var(--rule-soft);
-  position: relative;
-}
-.pillar:last-child { border-right: none; padding-right: 0; }
-.pillar:not(:first-child) { padding-left: 32px; }
-
-.pillar-num {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  color: var(--bronze);
-  margin-bottom: 24px;
-}
-.pillar h3 {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1.15;
-  margin-bottom: 16px;
-  color: var(--paper);
-}
-.pillar p {
-  color: var(--paper-dim);
-  font-size: 14.5px;
-  line-height: 1.7;
-}
-
 /* ========== Chat section ========== */
 .chat-section {
   position: relative;
-  padding: 120px 0;
+  min-height: calc(100vh - 72px);
+  padding: 48px 0;
+  border-top: 1px solid var(--rule-soft);
 }
 .chat-inner {
-  max-width: var(--max-w);
+  max-width: none;
   margin: 0 auto;
   padding: 0 32px;
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 80px;
-  align-items: start;
+  grid-template-columns: minmax(260px, 0.32fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: stretch;
+  min-height: calc(100vh - 168px);
 }
 .chat-intro {
   position: sticky;
   top: 100px;
+  align-self: start;
 }
 .chat-intro h2 {
   font-family: var(--font-display);
@@ -421,7 +355,8 @@ h1.headline .small {
   border-radius: 2px;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: calc(100vh - 168px);
+  min-height: 620px;
   position: relative;
   overflow: hidden;
 }
@@ -486,6 +421,7 @@ h1.headline .small {
 .chat-log::-webkit-scrollbar-thumb { background: var(--bronze-dk); border-radius: 3px; }
 
 .message { max-width: 85%; }
+.message.wide { max-width: 100%; width: 100%; }
 .message.bot { align-self: flex-start; }
 .message.user { align-self: flex-end; }
 
@@ -521,6 +457,183 @@ h1.headline .small {
   background: var(--bronze-lt);
   color: var(--ink);
   font-weight: 400;
+}
+
+.wizard-card {
+  display: grid;
+  gap: 18px;
+  width: 100%;
+}
+.wizard-kicker {
+  font-family: var(--font-mono);
+  color: var(--bronze);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.wizard-title {
+  font-family: var(--font-display);
+  color: var(--paper);
+  font-size: 30px;
+  line-height: 1.05;
+}
+.wizard-help {
+  color: var(--paper-dim);
+  font-size: 14px;
+  max-width: 76ch;
+}
+.wizard-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+}
+.wizard-option {
+  min-height: 48px;
+  padding: 12px 14px;
+  color: var(--paper-dim);
+  background: rgba(168, 118, 58, 0.07);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  text-align: left;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+.wizard-option:hover,
+.wizard-option.selected {
+  color: var(--paper);
+  background: rgba(212, 160, 74, 0.14);
+  border-color: var(--bronze-lt);
+}
+.wizard-option small {
+  display: block;
+  margin-top: 4px;
+  color: var(--paper-mute);
+  line-height: 1.35;
+}
+.wizard-field {
+  display: grid;
+  gap: 8px;
+}
+.wizard-field label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--paper-mute);
+}
+.wizard-input,
+.wizard-textarea {
+  width: 100%;
+  background: rgba(20,16,11,0.48);
+  border: 1px solid var(--rule-soft);
+  border-radius: 2px;
+  color: var(--paper);
+  padding: 12px 14px;
+  outline: none;
+}
+.wizard-textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+.wizard-input:focus,
+.wizard-textarea:focus { border-color: var(--bronze); }
+.wizard-review {
+  max-height: 280px;
+  overflow: auto;
+  padding: 14px;
+  border: 1px solid var(--rule-soft);
+  background: rgba(0,0,0,0.18);
+  color: var(--paper-dim);
+  white-space: pre-wrap;
+  font-size: 12.5px;
+}
+.wizard-warning {
+  color: var(--bronze-lt);
+  font-size: 13px;
+}
+.wizard-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  border-top: 1px solid var(--rule-soft);
+  background: rgba(0,0,0,0.15);
+}
+.wizard-progress {
+  color: var(--paper-mute);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.wizard-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.wizard-action {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid var(--rule);
+  color: var(--paper-dim);
+  background: rgba(168,118,58,0.08);
+  border-radius: 2px;
+}
+.wizard-action.primary {
+  background: var(--bronze-lt);
+  border-color: var(--bronze-lt);
+  color: var(--ink);
+  font-weight: 500;
+}
+.wizard-action:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.status-card,
+.error-card {
+  padding: 16px 18px;
+  border: 1px solid var(--rule);
+  background: rgba(168,118,58,0.08);
+}
+.error-card {
+  border-color: rgba(202, 83, 58, 0.55);
+  background: rgba(202, 83, 58, 0.12);
+}
+.report-output {
+  display: grid;
+  gap: 13px;
+  max-width: 100%;
+}
+.report-output h1,
+.report-output h2,
+.report-output h3 {
+  color: var(--paper);
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.1;
+}
+.report-output h1 { font-size: 34px; }
+.report-output h2 { font-size: 26px; color: var(--bronze-lt); }
+.report-output h3 { font-size: 21px; }
+.report-output p,
+.report-output li {
+  color: var(--paper-dim);
+  font-size: 14.5px;
+}
+.report-output ul,
+.report-output ol {
+  padding-left: 22px;
+  display: grid;
+  gap: 6px;
+}
+.report-output strong { color: var(--paper); font-weight: 500; }
+.report-output blockquote {
+  margin: 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--bronze);
+  color: var(--paper-dim);
 }
 
 .suggested-prompts {
@@ -601,56 +714,6 @@ h1.headline .small {
 .send-btn:hover { background: var(--paper); transform: translateY(-1px); }
 .send-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
 
-/* ========== Footer ========== */
-footer {
-  background: var(--ink);
-  border-top: 1px solid var(--rule-soft);
-  padding: 60px 32px 40px;
-  margin-top: 0;
-}
-.footer-inner {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 48px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid var(--rule-soft);
-}
-.footer-brand {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 32px;
-  color: var(--paper);
-  margin-bottom: 16px;
-}
-.footer-brand span { color: var(--bronze-lt); }
-.footer-tagline { color: var(--paper-mute); font-size: 13px; max-width: 36ch; line-height: 1.7; }
-.footer-col h4 {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--bronze);
-  margin-bottom: 18px;
-  font-weight: 500;
-}
-.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.footer-col a { color: var(--paper-dim); font-size: 13.5px; transition: color 0.2s ease; }
-.footer-col a:hover { color: var(--bronze-lt); }
-.footer-fine {
-  max-width: var(--max-w);
-  margin: 32px auto 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  color: var(--paper-mute);
-  text-transform: uppercase;
-}
-
 /* ========== Reveal animations ========== */
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.65, 0.3, 1); }
 .reveal.in { opacity: 1; transform: translateY(0); }
@@ -663,22 +726,15 @@ footer {
   .hero { grid-template-columns: 1fr; gap: 48px; padding: 60px 24px 80px; min-height: auto; }
   .hero-image { min-height: 360px; order: -1; }
   .hero-marker { display: none; }
-  .section-head { grid-template-columns: 1fr; gap: 24px; }
-  .pillar-grid { grid-template-columns: 1fr; }
-  .pillar { border-right: none; border-bottom: 1px solid var(--rule-soft); padding: 32px 0; }
-  .pillar:not(:first-child) { padding-left: 0; }
-  .chat-inner { grid-template-columns: 1fr; gap: 48px; }
+  .chat-inner { grid-template-columns: 1fr; gap: 32px; min-height: auto; }
   .chat-intro { position: static; }
-  .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .chat-widget { height: 680px; min-height: 560px; }
   nav.links { display: none; }
 }
 @media (max-width: 560px) {
   .topbar-inner { padding: 14px 20px; }
-  .pillars-inner { padding: 64px 24px; }
   .chat-inner { padding: 0 24px; }
-  .chat-widget { height: 540px; }
-  .footer-inner { grid-template-columns: 1fr; }
-  .footer-fine { flex-direction: column; gap: 8px; }
+  .chat-widget { height: 640px; min-height: 520px; }
 }
 </style>
 </head>
@@ -689,13 +745,11 @@ footer {
 <header class="topbar">
   <div class="topbar-inner">
     <div class="brand">
-      <div class="brand-mark">Re<span>·</span>cours</div>
-      <div class="brand-tag" data-i18n="brand.tag">— Aide juridique · Québec</div>
+      <div class="brand-mark">DoDuck <span>Go</span></div>
+      <div class="brand-tag" data-i18n="brand.tag">— Don't be a quack</div>
     </div>
     <nav class="links">
-      <a href="#how" data-i18n="nav.method">La méthode</a>
       <a href="#chat" data-i18n="nav.assistant">L'assistant</a>
-      <a href="#about" data-i18n="nav.about">À propos</a>
     </nav>
     <div class="lang-switch" role="group" aria-label="Language switcher">
       <button class="active" data-lang="fr">FR</button>
@@ -707,56 +761,24 @@ footer {
 <!-- ========== HERO ========== -->
 <section class="hero">
   <div class="hero-text reveal in">
-    <div class="eyebrow" data-i18n="hero.eyebrow">Édition 01 · Recours administratifs</div>
+    <div class="eyebrow" data-i18n="hero.eyebrow">Don't be a quack</div>
     <h1 class="headline" data-i18n-html="hero.headline">
-      Vos droits<br/>
-      ne devraient pas <em>dépendre</em><br/>
-      de l'accès à l'information.
-      <span class="small">Un assistant juridique pour celles et ceux qui n'ont jamais eu accès à un cabinet.</span>
+      Administrative judge ethics<br/>
+      without the <em>guesswork.</em>
+      <span class="small">A guided CJA complaint triage assistant.</span>
     </h1>
     <p class="lede" data-i18n-html="hero.lede">
-      <strong>Recours</strong> vous accompagne, étape par étape, dans la rédaction d'une plainte au Conseil de la justice administrative, d'une mise en demeure, ou d'un dossier pour la Cour des petites créances. Confidentiel, gratuit, en français, en anglais, et en arabe.
+      <strong>DoDuck Go</strong> helps people check whether a Quebec administrative judge complaint belongs in the Conseil de la justice administrative process, then turns the facts into a clean filing checklist.
     </p>
     <div class="cta-row">
-      <a href="#chat" class="btn-primary" data-i18n="hero.ctaPrimary">Commencer une démarche</a>
-      <a href="#how" class="btn-ghost" data-i18n="hero.ctaSecondary">Comment ça fonctionne</a>
+      <a href="#chat" class="btn-primary" data-i18n="hero.ctaPrimary">Start triage</a>
     </div>
   </div>
 
   <div class="hero-image reveal in reveal-delay-2" aria-hidden="true">
-    <div class="hero-marker">JUSTITIA · MMXXVI</div>
+    <div class="hero-marker">DODUCK GO</div>
     <img src="assets/lady_justice.png" alt="Statue de la justice tenant la balance, baignée d'une lumière dorée" data-i18n-attr="alt" data-i18n="hero.imageAlt" />
-    <div class="image-caption">« Audi alteram partem »</div>
-  </div>
-</section>
-
-<!-- ========== PILLARS ========== -->
-<section class="pillars" id="how">
-  <div class="pillars-inner">
-    <div class="section-head reveal">
-      <h2 data-i18n-html="pillars.title">La méthode<br/><em>Recours</em></h2>
-      <p data-i18n-html="pillars.lede">
-        Plutôt qu'un chatbot générique, <strong style="color:var(--paper)">Recours</strong> suit une logique structurée — inspirée des modèles de flux décisionnel utilisés dans les cliniques juridiques. Trois étapes, jamais plus, et un document concret au bout du parcours.
-      </p>
-    </div>
-
-    <div class="pillar-grid">
-      <div class="pillar reveal">
-        <div class="pillar-num" data-i18n="pillars.p1.num">— 01 / Triage</div>
-        <h3 data-i18n="pillars.p1.title">Le bon recours, le bon organisme</h3>
-        <p data-i18n="pillars.p1.body">L'assistant identifie d'abord si votre situation relève du Conseil de la justice administrative, de la Régie du bâtiment, du Barreau, du Protecteur du citoyen, ou d'un autre forum. Une plainte au mauvais endroit, c'est des mois de perdus.</p>
-      </div>
-      <div class="pillar reveal reveal-delay-1">
-        <div class="pillar-num" data-i18n="pillars.p2.num">— 02 / Récit</div>
-        <h3 data-i18n="pillars.p2.title">Vos faits, structurés</h3>
-        <p data-i18n="pillars.p2.body">L'assistant transforme votre récit en un dossier ordonné : les comportements reprochés, les dates, les témoins, les pièces justificatives. Sans jargon, sans formuler à votre place ce que vous n'avez pas dit.</p>
-      </div>
-      <div class="pillar reveal reveal-delay-2">
-        <div class="pillar-num" data-i18n="pillars.p3.num">— 03 / Document</div>
-        <h3 data-i18n="pillars.p3.title">Un texte prêt à déposer</h3>
-        <p data-i18n="pillars.p3.body">Au bout du parcours : un texte rédigé selon les attentes de l'organisme concerné, à copier-coller dans le formulaire officiel. Vous gardez la main : rien n'est envoyé en votre nom.</p>
-      </div>
-    </div>
+    <div class="image-caption">Don't be a quack</div>
   </div>
 </section>
 
@@ -764,12 +786,11 @@ footer {
 <section class="chat-section" id="chat">
   <div class="chat-inner">
     <div class="chat-intro reveal">
-      <h2 data-i18n-html="chat.title">Parlez-en<br/><em>maintenant.</em></h2>
-      <p data-i18n="chat.body1">L'assistant vous pose les questions une par une. Il ne stocke pas vos réponses au-delà de la session, sauf si vous demandez explicitement à sauvegarder votre dossier.</p>
-      <p data-i18n="chat.body2">Si à un moment vous voulez parler à une personne, l'assistant vous orientera vers un Centre de justice de proximité, l'Aide juridique, ou un organisme communautaire selon votre situation.</p>
+      <h2 data-i18n-html="chat.title">Complaint<br/><em>triage.</em></h2>
+      <p data-i18n="chat.body1">Paste a completed intake or describe the situation. The assistant checks CJA fit, appeal red flags, missing facts, and evidence.</p>
       <div class="disclaimer">
         <strong data-i18n="chat.disclaimerTitle">Information, pas conseil juridique</strong>
-        <span data-i18n="chat.disclaimerBody">Recours fournit de l'information juridique générale et de l'aide à la rédaction. Il ne remplace pas un avocat ou un notaire. Pour les dossiers complexes ou urgents, consultez un professionnel inscrit au Barreau ou à la Chambre des notaires.</span>
+        <span data-i18n="chat.disclaimerBody">Legal information and triage support only. DoDuck Go does not decide admissibility or file a complaint.</span>
       </div>
     </div>
 
@@ -777,85 +798,32 @@ footer {
       <div class="chat-header">
         <div class="chat-title">
           <span class="chat-status-dot"></span>
-          <span class="chat-title-text" data-i18n="widget.status">Assistant Recours · en ligne</span>
+          <span class="chat-title-text" data-i18n="widget.status">DoDuck Go · online</span>
         </div>
         <span class="chat-meta" data-i18n="widget.session">SESSION · #ANON</span>
       </div>
 
       <div class="chat-log" id="chatLog">
-        <div class="message bot">
-          <div class="message-meta" data-i18n="widget.botLabel">Assistant</div>
-          <div class="bubble">
-            <span data-i18n-html="widget.greeting">Bonjour. Je peux vous aider à <em>identifier le bon recours</em>, à structurer vos faits, et à rédiger un document à déposer.<br><br>Pour commencer, dites-moi de quel tribunal s'agit-il</span>
-            <div class="suggested-prompts">
-              <button class="prompt-chip" data-i18n="widget.chip1">Tribunal administratif du Québec (TAQ)</button>
-              <button class="prompt-chip" data-i18n="widget.chip2">Tribunal administratif du travail (TAT)</button>
-              <button class="prompt-chip" data-i18n="widget.chip3">Tribunal administratif du logement (TAL)</button>
-              <button class="prompt-chip" data-i18n="widget.chip4">Tribunal administratif des marchés financiers (TAM)</button>
-              <button class="prompt-chip" data-i18n="widget.chip4">Bureau des présidents de comités de discipline des ordres professionnels</button>
-            </div>
-          </div>
-        </div>
-
+        <div id="wizardMount"></div>
         <div class="message bot" style="display:none" id="typingMsg">
           <div class="message-meta" data-i18n="widget.botLabel">Assistant</div>
           <div class="typing active"><span></span><span></span><span></span></div>
         </div>
       </div>
 
-      <div class="chat-input-row">
-        <textarea
-          id="chatInput"
-          class="chat-input"
-          rows="1"
-          placeholder="Décrivez votre situation…"
-          data-i18n-attr="placeholder"
-          data-i18n="widget.inputPlaceholder"
-          aria-label="Votre message"></textarea>
-        <button id="sendBtn" class="send-btn" aria-label="Envoyer" data-i18n-attr="aria-label" data-i18n="widget.sendAria">↑</button>
+      <div class="wizard-footer">
+        <span class="wizard-progress" id="wizardProgress">Step 1</span>
+        <div class="wizard-actions">
+          <button class="wizard-action" id="demoBtn" type="button">Load demo facts</button>
+          <button class="wizard-action" id="backBtn" type="button">Back</button>
+          <button class="wizard-action primary" id="nextBtn" type="button">Next</button>
+          <button class="wizard-action primary" id="runBtn" type="button" style="display:none">Run OpenJustice</button>
+          <button class="wizard-action" id="resetBtn" type="button">Reset</button>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- ========== FOOTER ========== -->
-<footer id="about">
-  <div class="footer-inner">
-    <div>
-      <div class="footer-brand">Re<span>·</span>cours</div>
-      <div class="footer-tagline" data-i18n="footer.tagline">Un assistant juridique en libre accès, conçu pour les personnes que le système laisse souvent de côté. Bâti à Montréal.</div>
-    </div>
-    <div class="footer-col">
-      <h4 data-i18n="footer.col1.title">Recours</h4>
-      <ul>
-        <li><a href="#" data-i18n="footer.col1.item1">Plainte au CJA</a></li>
-        <li><a href="#" data-i18n="footer.col1.item2">Mise en demeure</a></li>
-        <li><a href="#" data-i18n="footer.col1.item3">Petites créances</a></li>
-        <li><a href="#" data-i18n="footer.col1.item4">Plainte à l'OPC</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4 data-i18n="footer.col2.title">Ressources</h4>
-      <ul>
-        <li><a href="#" data-i18n="footer.col2.item1">Centres de justice de proximité</a></li>
-        <li><a href="#" data-i18n="footer.col2.item2">Aide juridique du Québec</a></li>
-        <li><a href="#" data-i18n="footer.col2.item3">Éducaloi</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4 data-i18n="footer.col3.title">À propos</h4>
-      <ul>
-        <li><a href="#" data-i18n="footer.col3.item1">Notre méthode</a></li>
-        <li><a href="#" data-i18n="footer.col3.item2">Confidentialité</a></li>
-        <li><a href="#" data-i18n="footer.col3.item3">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-fine">
-    <span data-i18n="footer.copyright">© MMXXVI · Recours · Tous droits réservés</span>
-    <span data-i18n="footer.poweredBy">Propulsé par OpenJustice · v0.1</span>
-  </div>
-</footer>
 
 <script>
 // ========== Reveal on scroll ==========
@@ -867,138 +835,81 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 // ========== i18n ==========
 const I18N = {
   fr: {
-    'html.lang': 'fr',
-    'document.title': "Recours — Aide juridique propulsée par l'IA",
-    'brand.tag': '— Aide juridique · Québec',
-    'nav.method': 'La méthode',
+    'html.lang': 'en',
+    'document.title': "DoDuck Go — Don't be a quack",
+    'brand.tag': "— Don't be a quack",
+    'nav.method': '',
     'nav.assistant': "L'assistant",
-    'nav.about': 'À propos',
+    'nav.about': '',
 
-    'hero.eyebrow': 'Édition 01 · Recours administratifs',
-    'hero.headline': "L'information <br/>ne devraient pas être un <em>obstacle</em><br/><span class=\"small\">Un assistant juridique pour allèger votre charge et la notre.</span>",
-    'hero.lede': "<strong>Recours</strong> vous accompagne, étape par étape, dans la rédaction d'une plainte au Conseil de la justice administrative, d'une mise en demeure, ou d'un dossier pour la Cour des petites créances. Confidentiel, gratuit, en français et en anglais.",
-    'hero.ctaPrimary': 'Commencer une démarche',
-    'hero.ctaSecondary': 'Comment ça fonctionne',
+    'hero.eyebrow': "Don't be a quack",
+    'hero.headline': "Administrative judge ethics<br/>without the <em>guesswork.</em><span class=\"small\">A guided CJA complaint triage assistant.</span>",
+    'hero.lede': "<strong>DoDuck Go</strong> checks whether a Quebec administrative judge complaint belongs in the Conseil de la justice administrative process, then turns the facts into a clean filing checklist.",
+    'hero.ctaPrimary': 'Start triage',
+    'hero.ctaSecondary': '',
     'hero.imageAlt': 'Statue de la justice tenant la balance, baignée d\'une lumière dorée',
 
-    'pillars.title': 'La méthode<br/><em>Recours</em>',
-    'pillars.lede': "Plutôt qu'un chatbot générique, <strong style=\"color:var(--paper)\">Recours</strong> suit une logique structurée — inspirée des modèles de flux décisionnel utilisés dans les cliniques juridiques. Trois étapes, jamais plus, et un document concret au bout du parcours.",
-    'pillars.p1.num': '— 01 / Triage',
-    'pillars.p1.title': 'Le bon recours, le bon organisme',
-    'pillars.p1.body': "L'assistant identifie d'abord si votre situation relève du Conseil de la justice administrative, de la Régie du bâtiment, du Barreau, du Protecteur du citoyen, ou d'un autre forum. Une plainte au mauvais endroit, c'est des mois de perdus.",
-    'pillars.p2.num': '— 02 / Récit',
-    'pillars.p2.title': 'Vos faits, structurés',
-    'pillars.p2.body': "L'assistant transforme votre récit en un dossier ordonné : les comportements reprochés, les dates, les témoins, les pièces justificatives. Sans jargon, sans formuler à votre place ce que vous n'avez pas dit.",
-    'pillars.p3.num': '— 03 / Document',
-    'pillars.p3.title': 'Un texte prêt à déposer',
-    'pillars.p3.body': "Au bout du parcours : un texte rédigé selon les attentes de l'organisme concerné, à copier-coller dans le formulaire officiel. Vous gardez la main : rien n'est envoyé en votre nom.",
+    'chat.title': "Complaint<br/><em>triage.</em>",
+    'chat.body1': "Paste a completed intake or describe the situation. The assistant checks CJA fit, appeal red flags, missing facts, and evidence.",
+    'chat.body2': '',
+    'chat.disclaimerTitle': 'Information, not legal advice',
+    'chat.disclaimerBody': "Legal information and triage support only. DoDuck Go does not decide admissibility or file a complaint.",
 
-    'chat.title': "Parlez-en<br/><em>maintenant.</em>",
-    'chat.body1': "L'assistant vous pose les questions une par une. Il ne stocke pas vos réponses au-delà de la session, sauf si vous demandez explicitement à sauvegarder votre dossier.",
-    'chat.body2': "Si à un moment vous voulez parler à une personne, l'assistant vous orientera vers un Centre de justice de proximité, l'Aide juridique, ou un organisme communautaire selon votre situation.",
-    'chat.disclaimerTitle': 'Information, pas conseil juridique',
-    'chat.disclaimerBody': "Recours fournit de l'information juridique générale et de l'aide à la rédaction. Il ne remplace pas un avocat ou un notaire. Pour les dossiers complexes ou urgents, consultez un professionnel inscrit au Barreau ou à la Chambre des notaires.",
-
-    'widget.status': 'Assistant Recours · en ligne',
+    'widget.status': 'DoDuck Go · online',
     'widget.session': 'SESSION · #ANON',
     'widget.botLabel': 'Assistant',
-    'widget.userLabel': 'Vous',
-    'widget.greeting': "Bonjour. Je peux vous aider à <em>identifier le bon recours</em>, à structurer vos faits, et à rédiger un document à déposer.<br><br>Pour commencer, dites-moi de quel tribunal s'agit il.",
-    'widget.chip1': "Un juge du TAQ a été irrespectueux durant mon audience",
-'widget.chip2': "J’ai un problème avec une décision du TAT",
-'widget.chip3': "Mon propriétaire refuse d’effectuer des réparations malgré mes demandes",
-'widget.chip4': "Je souhaite contester une décision liée aux marchés financiers",
-'widget.chip5': "Je souhaite déposer une plainte concernant un comité de discipline professionnel",
-    'widget.inputPlaceholder': 'Décrivez votre situation…',
-    'widget.sendAria': 'Envoyer',
-    'widget.errorMsg': 'Une erreur de connexion est survenue. Veuillez réessayer.',
-    'widget.demoReply': "Merci. Pour orienter correctement votre dossier, j'ai besoin de savoir : devant quel tribunal s'est passé l'événement ? (TAL, TAT, TAQ, ou autre)",
-
-    'footer.tagline': 'Un assistant juridique en libre accès, conçu pour les personnes que le système laisse souvent de côté. Bâti à Montréal.',
-    'footer.col1.title': 'Recours',
-    'footer.col1.item1': 'Plainte au CJA',
-    'footer.col1.item2': 'Mise en demeure',
-    'footer.col1.item3': 'Petites créances',
-    'footer.col1.item4': "Plainte à l'OPC",
-    'footer.col2.title': 'Ressources',
-    'footer.col2.item1': 'Centres de justice de proximité',
-    'footer.col2.item2': 'Aide juridique du Québec',
-    'footer.col2.item3': 'Éducaloi',
-    'footer.col3.title': 'À propos',
-    'footer.col3.item1': 'Notre méthode',
-    'footer.col3.item2': 'Confidentialité',
-    'footer.col3.item3': 'Contact',
-    'footer.copyright': '© MMXXVI · Recours · Tous droits réservés',
-    'footer.poweredBy': 'Propulsé par OpenJustice · v0.1',
+    'widget.userLabel': 'You',
+    'widget.greeting': "I can help triage whether this looks like a <em>CJA ethics complaint</em> or an appeal/other-forum issue.<br><br>Start with the tribunal, decision status, what remedy you want, and what the judge did.",
+    'widget.chip1': "A TAL judge was disrespectful during my hearing",
+    'widget.chip2': "I want the CJA to change the decision",
+    'widget.chip3': "The matter was in Small Claims",
+    'widget.chip4': "A disciplinary council president acted unfairly",
+    'widget.chip5': "I am not sure which tribunal handled the matter",
+    'widget.inputPlaceholder': 'Describe the situation...',
+    'widget.sendAria': 'Send',
+    'widget.errorMsg': 'A connection error occurred. Please try again.',
+    'widget.demoReply': "To triage this properly, I need the tribunal/body, whether a decision was rendered, whether you want discipline or a changed decision, and the specific conduct you are complaining about.",
   },
 
   en: {
     'html.lang': 'en',
-    'document.title': 'Recours — AI-powered legal aid',
-    'brand.tag': '— Legal aid · Quebec',
-    'nav.method': 'Method',
+    'document.title': "DoDuck Go — Don't be a quack",
+    'brand.tag': "— Don't be a quack",
+    'nav.method': '',
     'nav.assistant': 'Assistant',
-    'nav.about': 'About',
+    'nav.about': '',
 
-    'hero.eyebrow': 'Issue 01 · Administrative remedies',
-    'hero.headline': "Access to <br/>information <em>shouldn't</em><br/>be an obstacle.<span class=\"small\">A legal assistant to ease your struggles and lighten our load.</span>",
-    'hero.lede': "<strong>Recours</strong> walks you, step by step, through filing a complaint with the Conseil de la justice administrative, drafting a formal notice, or preparing a Small Claims Court file. Confidential, free, in French and English.",
-    'hero.ctaPrimary': 'Start a procedure',
-    'hero.ctaSecondary': 'How it works',
+    'hero.eyebrow': "Don't be a quack",
+    'hero.headline': "Administrative judge ethics<br/>without the <em>guesswork.</em><span class=\"small\">A guided CJA complaint triage assistant.</span>",
+    'hero.lede': "<strong>DoDuck Go</strong> checks whether a Quebec administrative judge complaint belongs in the Conseil de la justice administrative process, then turns the facts into a clean filing checklist.",
+    'hero.ctaPrimary': 'Start triage',
+    'hero.ctaSecondary': '',
     'hero.imageAlt': 'Statue of justice holding the scales, bathed in golden light',
 
-    'pillars.title': 'The <em>Deonthos</em><br/>method',
-    'pillars.lede': "Rather than a generic chatbot, <strong style=\"color:var(--paper)\">Recours</strong> follows a structured logic — inspired by the decision-flow models used in legal clinics. A few steps, and a concrete document at the end of the path.",
-    'pillars.p1.num': '— 01 / Triage',
-    'pillars.p1.title': 'The right remedy, the right body',
-    'pillars.p1.body': "The assistant first determines whether your situation falls under the Conseil de la justice administrative, the Régie du bâtiment, the Barreau, the Protecteur du citoyen, or another forum. A complaint filed with the wrong body can cost you months.",
-    'pillars.p2.num': '— 02 / Narrative',
-    'pillars.p2.title': 'Your facts, structured',
-    'pillars.p2.body': "The assistant turns your account into an ordered file: the conduct complained of, dates, witnesses, supporting documents. No jargon, and nothing put in your mouth that you didn't actually say.",
-    'pillars.p3.num': '— 03 / Document',
-    'pillars.p3.title': 'A document ready to file',
-    'pillars.p3.body': "At the end of the path: a text written to the standards expected by the body concerned, ready to copy-paste into the official form. You stay in control — nothing is filed on your behalf.",
-
-    'chat.title': 'Talk to it<br/><em>now.</em>',
-    'chat.body1': "The assistant asks questions one at a time. It does not store your answers beyond the session unless you explicitly ask to save your file.",
-    'chat.body2': "If at any point you want to speak with a person, the assistant will refer you to a Centre de justice de proximité, Aide juridique, or a community organization, depending on your situation.",
+    'chat.title': 'Complaint<br/><em>triage.</em>',
+    'chat.body1': "Paste a completed intake or describe the situation. The assistant checks CJA fit, appeal red flags, missing facts, and evidence.",
+    'chat.body2': '',
     'chat.disclaimerTitle': 'Information, not legal advice',
-    'chat.disclaimerBody': "Recours provides general legal information and drafting assistance. It is not a substitute for a lawyer or notary. For complex or urgent matters, consult a professional registered with the Barreau du Québec or the Chambre des notaires.",
+    'chat.disclaimerBody': "Legal information and triage support only. DoDuck Go does not decide admissibility or file a complaint.",
 
-    'widget.status': 'Recours assistant · online',
+    'widget.status': 'DoDuck Go · online',
     'widget.session': 'SESSION · #ANON',
     'widget.botLabel': 'Assistant',
     'widget.userLabel': 'You',
-    'widget.greeting': "Hello. I can help you <em>identify the right remedy</em>, structure your facts, and draft a document to file.<br><br>To start, tell me what tribunal are we targetting.",
-    'widget.chip1': "Quebec Administrative Tribunal (TAQ)",
-'widget.chip2': "Administrative Labour Tribunal (TAT)",
-'widget.chip3': "Administrative Housing Tribunal (TAL)",
-'widget.chip4': "Administrative Tribunal of Financial Markets (TAM)",
-'widget.chip5': "Office of Chairpersons of Professional Orders' Disciplinary Councils",
+    'widget.greeting': "I can help triage whether this looks like a <em>CJA ethics complaint</em> or an appeal/other-forum issue.<br><br>Start with the tribunal, decision status, what remedy you want, and what the judge did.",
+    'widget.chip1': "A TAL judge was disrespectful during my hearing",
+    'widget.chip2': "I want the CJA to change the decision",
+    'widget.chip3': "The matter was in Small Claims",
+    'widget.chip4': "A disciplinary council president acted unfairly",
+    'widget.chip5': "I am not sure which tribunal handled the matter",
+    'widget.inputPlaceholder': 'Describe the situation...',
     'widget.sendAria': 'Send',
     'widget.errorMsg': 'A connection error occurred. Please try again.',
-    'widget.demoReply': "Thank you. To route your file correctly, I need to know: which tribunal was the matter heard before? (TAL, TAT, TAQ, or another)",
-
-    'footer.tagline': 'An open-access legal assistant, designed for the people the system most often leaves behind. Built in Montréal.',
-    'footer.col1.title': 'Remedies',
-    'footer.col1.item1': 'Complaint to the CJA',
-    'footer.col1.item2': 'Formal notice (mise en demeure)',
-    'footer.col1.item3': 'Small Claims Court',
-    'footer.col1.item4': 'Complaint to the OPC',
-    'footer.col2.title': 'Resources',
-    'footer.col2.item1': 'Justice de proximité centres',
-    'footer.col2.item2': 'Legal Aid Québec',
-    'footer.col2.item3': 'Éducaloi',
-    'footer.col3.title': 'About',
-    'footer.col3.item1': 'Our method',
-    'footer.col3.item2': 'Privacy',
-    'footer.col3.item3': 'Contact',
-    'footer.copyright': '© MMXXVI · Recours · All rights reserved',
-    'footer.poweredBy': 'Powered by OpenJustice · v0.1',
+    'widget.demoReply': "To triage this properly, I need the tribunal/body, whether a decision was rendered, whether you want discipline or a changed decision, and the specific conduct you are complaining about.",
   },
 };
 
-let currentLang = localStorage.getItem('recours.lang') || 'fr';
+let currentLang = localStorage.getItem('doduck.lang') || 'en';
 
 function t(key) {
   return (I18N[currentLang] && I18N[currentLang][key]) ?? (I18N.fr[key] ?? key);
@@ -1041,7 +952,7 @@ function applyTranslations() {
 document.querySelectorAll('.lang-switch button').forEach(btn => {
   btn.addEventListener('click', () => {
     currentLang = btn.dataset.lang;
-    localStorage.setItem('recours.lang', currentLang);
+    localStorage.setItem('doduck.lang', currentLang);
     applyTranslations();
   });
 });
@@ -1049,37 +960,526 @@ document.querySelectorAll('.lang-switch button').forEach(btn => {
 // Initial render
 applyTranslations();
 
-// ========== Chat ==========
+// ========== Guided OpenJustice intake ==========
+const OPENJUSTICE_RUN_URL = 'https://api.openjustice.ai/dialog-flow-executions/run';
+const DIALOG_FLOW_ID = '357f9df8-86db-4834-b932-7e86aec26a0f';
+const MODEL = 'gpt-5.4';
+const TOKEN_FILE_URL = 'token';
+const API_TIMEOUT_MS = 420000;
+
 const log = document.getElementById('chatLog');
-const input = document.getElementById('chatInput');
-const sendBtn = document.getElementById('sendBtn');
+const wizardMount = document.getElementById('wizardMount');
 const typingMsg = document.getElementById('typingMsg');
+const progressEl = document.getElementById('wizardProgress');
+const backBtn = document.getElementById('backBtn');
+const nextBtn = document.getElementById('nextBtn');
+const runBtn = document.getElementById('runBtn');
+const resetBtn = document.getElementById('resetBtn');
+const demoBtn = document.getElementById('demoBtn');
 
-// Auto-grow textarea
-input.addEventListener('input', () => {
-  input.style.height = 'auto';
-  input.style.height = Math.min(input.scrollHeight, 120) + 'px';
-});
+const steps = [
+  {
+    id: 'tribunal',
+    type: 'single',
+    title: 'Which tribunal or body was involved?',
+    help: 'Pick the closest match. This is the first CJA jurisdiction screen.',
+    options: [
+      ['Tribunal administratif du logement', 'TAL', 'Housing tribunal'],
+      ['Tribunal administratif du Québec', 'TAQ', 'Quebec administrative tribunal'],
+      ['Tribunal administratif du travail', 'TAT', 'Administrative labour tribunal'],
+      ['Tribunal administratif des marchés financiers', 'TAMF', 'Financial markets tribunal'],
+      ['Bureau des présidents de comités de discipline des ordres professionnels', 'Disciplinary council presidents', 'Professional orders discipline process'],
+      ['Small Claims / other court', 'Small Claims / court', 'Usually not CJA'],
+      ["Commission d'accès à l'information", 'CAI', 'Usually not CJA'],
+      ['Not sure', 'Not sure', 'Ask for classification'],
+      ['Other', 'Other', 'Enter a short name below'],
+    ],
+  },
+  {
+    id: 'decisionRendered',
+    type: 'single',
+    title: 'Has a decision been rendered?',
+    help: 'A written decision makes the intake easier to classify. If unknown, choose not sure.',
+    options: [
+      ['Yes', 'Yes', 'A written or final decision exists'],
+      ['No', 'No', 'No final decision yet'],
+      ['Not sure', 'Not sure', 'The user does not know'],
+    ],
+  },
+  {
+    id: 'partyStatus',
+    type: 'single',
+    title: 'Was the user connected to the matter?',
+    help: 'Choose the best description of the user’s role.',
+    options: [
+      ['Yes - party/applicant/respondent', 'Party to the case', 'Directly involved'],
+      ['Representative or helper', 'Representative/helper', 'Acted for someone involved'],
+      ['Witness or observer', 'Witness/observer', 'Observed the matter'],
+      ['No direct connection', 'No direct connection', 'Likely weaker for intake'],
+      ['Not sure', 'Not sure', 'Unclear connection'],
+    ],
+  },
+  {
+    id: 'caseBackground',
+    type: 'textarea',
+    title: 'What was the original case about?',
+    help: 'Short is fine. One sentence is enough.',
+    placeholder: 'Example: The case was about urgent housing repairs and a rent reduction.',
+  },
+  {
+    id: 'requestPurpose',
+    type: 'single',
+    title: 'What is the main purpose of the request?',
+    help: 'This separates ethics complaints from appeals.',
+    options: [
+      ['Ethics complaint about conduct', 'Ethics complaint', 'Review the judge’s conduct'],
+      ['Change or reverse the decision', 'Change decision', 'Appeal/review style request'],
+      ['Both ethics and decision change', 'Both', 'Needs careful separation'],
+      ['Not sure', 'Not sure', 'User needs triage'],
+    ],
+  },
+  {
+    id: 'decisionChange',
+    type: 'single',
+    title: 'Is the user trying to change, overturn, appeal, or review the decision?',
+    help: 'The CJA is not an appeal body, so this answer matters.',
+    options: [
+      ['No', 'No', 'Complaint is about conduct'],
+      ['Yes', 'Yes', 'Likely appeal/review red flag'],
+      ['Not sure', 'Not sure', 'Needs explanation in report'],
+    ],
+  },
+  {
+    id: 'requestedRemedies',
+    type: 'multi',
+    title: 'What result does the user want?',
+    help: 'Select all that apply.',
+    options: [
+      ['Disciplinary or corrective action', 'Disciplinary/corrective action'],
+      ['Investigation or ethics review', 'Investigation/ethics review'],
+      ['Damages or money compensation', 'Damages'],
+      ['Fine', 'Fine'],
+      ['New hearing', 'New hearing'],
+      ['Different judge', 'Different judge'],
+      ['Public apology or other non-disciplinary relief', 'Other relief'],
+      ['Not sure', 'Not sure'],
+    ],
+  },
+  {
+    id: 'conductTiming',
+    type: 'single',
+    title: 'When did the behaviour happen?',
+    help: 'Ethics issues can happen during the proceeding or, sometimes, outside work.',
+    options: [
+      ['During the hearing/process', 'During the hearing/process', 'Inside the administrative process'],
+      ['Outside the administrative process', 'Outside the process', 'Outside-work conduct'],
+      ['Both during and outside the process', 'Both', 'Both contexts'],
+      ['No specific conduct described', 'No specific conduct', 'Likely insufficient or appeal-like'],
+      ['Not sure', 'Not sure', 'Needs more information'],
+    ],
+  },
+  {
+    id: 'conductCategories',
+    type: 'multi',
+    title: 'What kind of conduct is being alleged?',
+    help: 'Select all that fit. These mirror the guideline ethics categories.',
+    options: [
+      ['Disrespectful, humiliating, aggressive, or discriminatory comments', 'Disrespectful comments'],
+      ['Apparent bias or lack of impartiality', 'Bias/impartiality'],
+      ['Unequal treatment of parties', 'Unequal treatment'],
+      ['Improper assistance or legal advice to one party', 'Improper assistance'],
+      ['Improper communication with one party in the absence of the other', 'One-sided communication'],
+      ['Conflict of interest', 'Conflict of interest'],
+      ['Failure to act with diligence or unreasonable delay', 'Delay/diligence'],
+      ['Abuse of judicial or tribunal status', 'Abuse of status'],
+      ['Outside-work conduct affecting public confidence', 'Outside-work conduct'],
+      ['Only disagreement with the decision/result', 'Decision disagreement only'],
+      ['Other or not sure', 'Other/not sure'],
+    ],
+  },
+  {
+    id: 'conductDescription',
+    type: 'textarea',
+    title: 'Briefly describe what happened.',
+    help: 'Optional but helpful. One or two sentences is enough for the demo.',
+    placeholder: 'Example: The judge repeatedly interrupted me and made a sarcastic comment before I finished presenting evidence.',
+  },
+  {
+    id: 'dateContext',
+    type: 'textarea',
+    title: 'Date and context of the conduct',
+    help: 'Use approximate dates if needed.',
+    placeholder: 'Example: The hearing took place by videoconference on February 20, 2025.',
+  },
+  {
+    id: 'evidence',
+    type: 'multi',
+    title: 'What evidence is available?',
+    help: 'Select everything the user has or may be able to get.',
+    options: [
+      ['Tribunal decision', 'Decision'],
+      ['Notice of hearing', 'Notice of hearing'],
+      ['Transcript or recording', 'Transcript/recording'],
+      ['Notes from the hearing', 'Hearing notes'],
+      ['Emails or letters', 'Emails/letters'],
+      ['Photos or screenshots', 'Photos/screenshots'],
+      ['Witness names', 'Witness names'],
+      ['No evidence yet', 'No evidence yet'],
+      ['Not sure', 'Not sure'],
+    ],
+  },
+  {
+    id: 'witnesses',
+    type: 'textarea',
+    title: 'Witnesses or people present',
+    help: 'Optional. A short list is enough.',
+    placeholder: 'Example: The landlord and the landlord’s representative were present. No independent witness.',
+  },
+  {
+    id: 'review',
+    type: 'review',
+    title: 'Review the generated intake',
+    help: 'This is the content DoDuck Go will send to OpenJustice.',
+  },
+];
 
-// Suggested prompt chips fill the input
-document.addEventListener('click', (e) => {
-  if (e.target.classList.contains('prompt-chip')) {
-    input.value = e.target.textContent.trim();
-    input.focus();
-    input.dispatchEvent(new Event('input'));
+let currentStep = 0;
+let isRunning = false;
+let intake = initialIntake();
+let cachedAuthHeader = '';
+
+function initialIntake() {
+  return {
+    tribunal: '',
+    tribunalOther: '',
+    decisionRendered: '',
+    decisionDate: '',
+    partyStatus: '',
+    caseBackground: '',
+    requestPurpose: '',
+    decisionChange: '',
+    requestedRemedies: [],
+    conductTiming: '',
+    conductCategories: [],
+    conductDescription: '',
+    dateContext: '',
+    evidence: [],
+    witnesses: '',
+  };
+}
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
+function escapeAttr(value) {
+  return escapeHtml(value).replaceAll('\n', '&#10;');
+}
+
+function selectedArray(id) {
+  return Array.isArray(intake[id]) ? intake[id] : [];
+}
+
+function currentValue(id) {
+  const value = intake[id];
+  return Array.isArray(value) ? value.join(', ') : value || '';
+}
+
+function isCurrentStepComplete() {
+  const step = steps[currentStep];
+  if (!step || step.type === 'review' || step.type === 'textarea') return true;
+  if (step.type === 'single') return Boolean(intake[step.id]);
+  if (step.type === 'multi') return selectedArray(step.id).length > 0;
+  return true;
+}
+
+function allRequiredComplete() {
+  return steps.every(step => {
+    if (step.type === 'single') return Boolean(intake[step.id]);
+    if (step.type === 'multi') return selectedArray(step.id).length > 0;
+    return true;
+  });
+}
+
+function optionButton(step, option) {
+  const [value, label, detail] = option;
+  const selected = step.type === 'multi'
+    ? selectedArray(step.id).includes(value)
+    : intake[step.id] === value;
+  return `
+    <button class="wizard-option ${selected ? 'selected' : ''}" type="button" data-field="${step.id}" data-value="${escapeAttr(value)}" data-type="${step.type}">
+      ${escapeHtml(label)}
+      ${detail ? `<small>${escapeHtml(detail)}</small>` : ''}
+    </button>
+  `;
+}
+
+function extraFieldsFor(step) {
+  if (step.id === 'tribunal' && intake.tribunal === 'Other') {
+    return `
+      <div class="wizard-field">
+        <label for="tribunalOther">Other tribunal/body</label>
+        <input class="wizard-input" id="tribunalOther" data-text-field="tribunalOther" value="${escapeAttr(intake.tribunalOther)}" placeholder="Name the tribunal or body" />
+      </div>
+    `;
   }
-});
+  if (step.id === 'decisionRendered' && intake.decisionRendered === 'Yes') {
+    return `
+      <div class="wizard-field">
+        <label for="decisionDate">Decision date, if known</label>
+        <input class="wizard-input" id="decisionDate" data-text-field="decisionDate" value="${escapeAttr(intake.decisionDate)}" placeholder="Example: March 14, 2025" />
+      </div>
+    `;
+  }
+  return '';
+}
 
-function appendMessage(role, text) {
+function renderStepBody(step) {
+  if (step.type === 'single' || step.type === 'multi') {
+    return `
+      <div class="wizard-options">
+        ${step.options.map(option => optionButton(step, option)).join('')}
+      </div>
+      ${extraFieldsFor(step)}
+    `;
+  }
+  if (step.type === 'textarea') {
+    return `
+      <div class="wizard-field">
+        <label for="${step.id}">Short answer</label>
+        <textarea class="wizard-textarea" id="${step.id}" data-text-field="${step.id}" placeholder="${escapeAttr(step.placeholder || '')}">${escapeHtml(intake[step.id] || '')}</textarea>
+      </div>
+    `;
+  }
+  if (step.type === 'review') {
+    const content = buildIntakeContent();
+    const warning = allRequiredComplete()
+      ? ''
+      : '<div class="wizard-warning">Some required selections are missing. Go back and complete the highlighted intake steps before running the API.</div>';
+    return `${warning}<div class="wizard-review">${escapeHtml(content)}</div>`;
+  }
+  return '';
+}
+
+function renderWizard() {
+  const step = steps[currentStep];
+  wizardMount.innerHTML = `
+    <div class="message bot wide">
+      <div class="message-meta">${escapeHtml(t('widget.botLabel'))}</div>
+      <div class="bubble">
+        <div class="wizard-card">
+          <div class="wizard-kicker">Step ${currentStep + 1} of ${steps.length}</div>
+          <div class="wizard-title">${escapeHtml(step.title)}</div>
+          <div class="wizard-help">${escapeHtml(step.help || '')}</div>
+          ${renderStepBody(step)}
+        </div>
+      </div>
+    </div>
+  `;
+  progressEl.textContent = `Step ${currentStep + 1} / ${steps.length}`;
+  backBtn.disabled = currentStep === 0 || isRunning;
+  nextBtn.style.display = step.type === 'review' ? 'none' : '';
+  nextBtn.disabled = !isCurrentStepComplete() || isRunning;
+  runBtn.style.display = step.type === 'review' ? '' : 'none';
+  runBtn.disabled = !allRequiredComplete() || isRunning;
+  demoBtn.disabled = isRunning;
+  resetBtn.disabled = isRunning;
+  log.scrollTop = log.scrollHeight;
+}
+
+function setIntakeValue(field, value, type) {
+  if (type === 'multi') {
+    const values = selectedArray(field);
+    intake[field] = values.includes(value)
+      ? values.filter(item => item !== value)
+      : [...values, value];
+  } else {
+    intake[field] = value;
+  }
+  renderWizard();
+}
+
+function loadDemoFacts() {
+  intake = {
+    tribunal: 'Tribunal administratif du logement',
+    tribunalOther: '',
+    decisionRendered: 'Yes',
+    decisionDate: 'March 14, 2025',
+    partyStatus: 'Yes - party/applicant/respondent',
+    caseBackground: 'The case was about the landlord’s refusal to make urgent repairs and a request for rent reduction because the heating system was not working properly during winter.',
+    requestPurpose: 'Ethics complaint about conduct',
+    decisionChange: 'No',
+    requestedRemedies: ['Disciplinary or corrective action', 'Investigation or ethics review'],
+    conductTiming: 'During the hearing/process',
+    conductCategories: [
+      'Disrespectful, humiliating, aggressive, or discriminatory comments',
+      'Apparent bias or lack of impartiality',
+      'Unequal treatment of parties',
+      'Improper assistance or legal advice to one party',
+      'Improper communication with one party in the absence of the other',
+    ],
+    conductDescription: 'During the hearing, the judge repeatedly interrupted me, made sarcastic comments about tenants exaggerating, appeared to let the landlord speak longer, and may have helped the landlord formulate a legal argument.',
+    dateContext: 'The hearing took place on February 20, 2025, by videoconference. The conduct happened during the hearing and during a short break.',
+    evidence: ['Tribunal decision', 'Notice of hearing', 'Notes from the hearing', 'Emails or letters', 'Photos or screenshots'],
+    witnesses: 'No independent witness was present with me, but the landlord and the landlord’s representative were present during the hearing.',
+  };
+  currentStep = steps.length - 1;
+  renderWizard();
+}
+
+function displayList(values, fallback = 'Not specified.') {
+  return values && values.length ? values.join(', ') + '.' : fallback;
+}
+
+function yesNoFromTiming(kind) {
+  if (kind === 'during') {
+    return intake.conductTiming === 'During the hearing/process' || intake.conductTiming === 'Both during and outside the process'
+      ? 'Yes. The behaviour happened during the administrative decision-making process.'
+      : intake.conductTiming === 'No specific conduct described'
+        ? 'No specific conduct has been described.'
+        : 'Not sure based on the completed intake.';
+  }
+  return intake.conductTiming === 'Outside the administrative process' || intake.conductTiming === 'Both during and outside the process'
+    ? 'Yes, the user reports conduct outside the administrative process.'
+    : intake.conductTiming === 'During the hearing/process'
+      ? 'No, or at least the current concern is about what happened during the hearing/process.'
+      : 'Not sure based on the completed intake.';
+}
+
+function tribunalText() {
+  return intake.tribunal === 'Other'
+    ? intake.tribunalOther || 'Other tribunal/body not specified'
+    : intake.tribunal || 'Not specified';
+}
+
+function buildConductDescription() {
+  if (intake.conductDescription.trim()) return intake.conductDescription.trim();
+  if (selectedArray('conductCategories').length) {
+    return `The user selected these conduct concerns: ${displayList(selectedArray('conductCategories'))}`;
+  }
+  return 'No specific conduct description was provided.';
+}
+
+function buildObjectiveText() {
+  const remedies = selectedArray('requestedRemedies');
+  if (intake.requestPurpose === 'Ethics complaint about conduct') {
+    return `I want the administrative judge or president’s conduct to be reviewed. I am seeking ${displayList(remedies, 'disciplinary or corrective review.')}`;
+  }
+  if (intake.requestPurpose === 'Change or reverse the decision') {
+    return `I mainly want to change, reverse, appeal, or review the decision. Requested results: ${displayList(remedies)}`;
+  }
+  if (intake.requestPurpose === 'Both ethics and decision change') {
+    return `I have both conduct concerns and concerns about the decision outcome. Requested results: ${displayList(remedies)}`;
+  }
+  return `I am not sure whether this should be an ethics complaint or another process. Requested results: ${displayList(remedies)}`;
+}
+
+function buildIntakeContent() {
+  const decision = intake.decisionRendered === 'Yes'
+    ? `Yes.${intake.decisionDate ? ` A written decision was rendered on ${intake.decisionDate}.` : ' A written decision has been rendered.'}`
+    : intake.decisionRendered === 'No'
+      ? 'No. No final decision has been rendered yet.'
+      : 'Not sure. The user does not know whether a decision has been rendered.';
+
+  const party = intake.partyStatus || 'Not specified';
+  const decisionChange = intake.decisionChange === 'No'
+    ? 'No. This complaint is about conduct, not about changing the result of the decision.'
+    : intake.decisionChange === 'Yes'
+      ? 'Yes. The user wants to change, overturn, appeal, or review the decision.'
+      : 'Not sure. The user is unsure whether they are trying to change or review the decision.';
+
+  const remedies = selectedArray('requestedRemedies');
+  const wantsNonCjaRemedy = remedies.some(item => ['Damages or money compensation', 'Fine', 'New hearing', 'Different judge'].includes(item));
+  const remedyAnswer = wantsNonCjaRemedy
+    ? `Yes or possibly. Requested remedies include: ${displayList(remedies)}`
+    : `No, or not primarily. Requested remedies are: ${displayList(remedies)}`;
+
+  return `I want to file an ethics complaint against an administrative judge or a president of a disciplinary council.
+
+1. Tribunal or body involved:
+${tribunalText()}.
+
+2. Was a decision rendered?
+${decision}
+
+3. Was I a party to the matter?
+${party}.
+
+4. What was the case about?
+${intake.caseBackground.trim() || 'The user did not provide detailed background about the underlying case.'}
+
+5. What do I want from the Conseil de la justice administrative?
+${buildObjectiveText()}
+
+6. Am I trying to change, overturn, appeal, or review the decision?
+${decisionChange}
+
+7. Am I seeking damages, money compensation, a fine, a new hearing, or a different judge?
+${remedyAnswer}
+
+8. Did the behaviour happen during the administrative decision-making process?
+${yesNoFromTiming('during')}
+
+9. Did the behaviour happen outside the administrative decision-making process?
+${yesNoFromTiming('outside')}
+
+10. Description of the conduct:
+${buildConductDescription()}
+
+11. Date and context of the conduct:
+${intake.dateContext.trim() || 'The exact date and context have not been provided.'}
+
+12. Why I think this is an ethics issue:
+The selected ethics concerns are: ${displayList(selectedArray('conductCategories'))} The user wants the situation triaged to determine whether it is about conduct, dignity, impartiality, diligence, competence, or public confidence rather than only disagreement with the decision.
+
+13. Available evidence:
+${displayList(selectedArray('evidence'))}
+
+14. Witnesses:
+${intake.witnesses.trim() || 'No witness details were provided.'}
+
+15. What I want help with:
+Please assess whether this situation appears to be a potential ethics complaint within the Conseil de la justice administrative’s process. If it may proceed, please give me a structured report, classify the ethics issues, identify missing facts, list evidence I should gather, and provide practical action items before filing the complaint.`;
+}
+
+async function authHeaderValue() {
+  if (cachedAuthHeader) return cachedAuthHeader;
+  let response;
+  try {
+    response = await fetch(TOKEN_FILE_URL, { cache: 'no-store' });
+  } catch {
+    throw new Error('Could not read the local token file. Run the demo through the local server, for example http://localhost:8000/index.html.');
+  }
+  if (!response.ok) {
+    throw new Error(`Could not read the local token file (${response.status}). Make sure /Users/minsu/Desktop/hackathon/token exists and the page is served from the project root.`);
+  }
+  const raw = (await response.text()).trim().replace(/^Bearer\s+/i, '');
+  if (!raw) throw new Error('The local token file is empty.');
+  cachedAuthHeader = `Bearer ${raw.startsWith('nap_') ? raw : `nap_${raw}`}`;
+  return cachedAuthHeader;
+}
+
+function appendHtmlMessage(role, html, wide = true) {
   const wrap = document.createElement('div');
-  wrap.className = 'message ' + role;
+  wrap.className = `message ${role}${wide ? ' wide' : ''}`;
   const label = role === 'user' ? t('widget.userLabel') : t('widget.botLabel');
-  wrap.innerHTML =
-    '<div class="message-meta">' + label + '</div>' +
-    '<div class="bubble"></div>';
-  wrap.querySelector('.bubble').textContent = text;
+  wrap.innerHTML = `<div class="message-meta">${escapeHtml(label)}</div><div class="bubble">${html}</div>`;
   log.insertBefore(wrap, typingMsg);
   log.scrollTop = log.scrollHeight;
+  return wrap.querySelector('.bubble');
+}
+
+function appendStatus(message) {
+  return appendHtmlMessage('bot', `<div class="status-card">${escapeHtml(message)}</div>`);
+}
+
+function appendError(message) {
+  appendHtmlMessage('bot', `<div class="error-card"><strong>Error</strong><br>${escapeHtml(message)}</div>`);
 }
 
 function showTyping(on) {
@@ -1087,51 +1487,228 @@ function showTyping(on) {
   if (on) log.scrollTop = log.scrollHeight;
 }
 
-async function send() {
-  const text = input.value.trim();
-  if (!text) return;
-  appendMessage('user', text);
-  input.value = '';
-  input.style.height = 'auto';
-  sendBtn.disabled = true;
-  showTyping(true);
+function inlineMarkdown(value) {
+  return value
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>');
+}
 
+function renderMarkdownLite(markdown) {
+  const lines = escapeHtml(markdown).split(/\r?\n/);
+  const html = [];
+  let listType = null;
+
+  function closeList() {
+    if (listType) {
+      html.push(`</${listType}>`);
+      listType = null;
+    }
+  }
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line) {
+      closeList();
+      continue;
+    }
+
+    const heading = line.match(/^(#{1,3})\s+(.+)$/);
+    if (heading) {
+      closeList();
+      const level = heading[1].length;
+      html.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`);
+      continue;
+    }
+
+    const bullet = line.match(/^[-*]\s+(.+)$/);
+    if (bullet) {
+      if (listType !== 'ul') {
+        closeList();
+        html.push('<ul>');
+        listType = 'ul';
+      }
+      html.push(`<li>${inlineMarkdown(bullet[1])}</li>`);
+      continue;
+    }
+
+    const numbered = line.match(/^\d+[.)]\s+(.+)$/);
+    if (numbered) {
+      if (listType !== 'ol') {
+        closeList();
+        html.push('<ol>');
+        listType = 'ol';
+      }
+      html.push(`<li>${inlineMarkdown(numbered[1])}</li>`);
+      continue;
+    }
+
+    closeList();
+    html.push(`<p>${inlineMarkdown(line)}</p>`);
+  }
+
+  closeList();
+  return `<div class="report-output">${html.join('')}</div>`;
+}
+
+function parseMaybeJson(value) {
+  if (typeof value !== 'string') return value;
   try {
-    // ===== HOOK FOR OpenJustice API =====
-    // Replace this stub with a real call to the OpenJustice execution API.
-    // Expected shape (based on the DTOs we discussed):
-    //   POST /executions/{executionId}/facts  { "userMessage": text }
-    //   → returns { currentNodeId, status, missingFacts, lastBotMessage, ... }
-    //
-    // const res = await fetch(`/api/openjustice/executions/${EXEC_ID}/facts`, {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ userMessage: text })
-    // });
-    // const data = await res.json();
-    // const reply = data.lastBotMessage ?? 'Désolé, une erreur est survenue.';
-
-    await new Promise(r => setTimeout(r, 900 + Math.random() * 600));
-    const reply = t('widget.demoReply');
-
-    showTyping(false);
-    appendMessage('bot', reply);
-  } catch (err) {
-    showTyping(false);
-    appendMessage('bot', t('widget.errorMsg'));
-  } finally {
-    sendBtn.disabled = false;
-    input.focus();
+    return JSON.parse(value);
+  } catch {
+    return value;
   }
 }
 
-sendBtn.addEventListener('click', send);
-input.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter' && !e.shiftKey) {
-    e.preventDefault();
-    send();
+function outputToText(output) {
+  const parsed = parseMaybeJson(output);
+  if (!parsed) return '';
+  if (typeof parsed === 'string') return parsed;
+  if (typeof parsed === 'object') {
+    return parsed.finalOutput || parsed.rationale || parsed.output || parsed.text || '';
+  }
+  return String(parsed);
+}
+
+function extractAnswer(data) {
+  const finalText = outputToText(data?.finalOutput);
+  if (finalText.trim()) return finalText;
+  const facts = data?.facts && typeof data.facts === 'object' ? Object.values(data.facts) : [];
+  for (const fact of facts) {
+    if (typeof fact?.rationale === 'string' && fact.rationale.trim()) return fact.rationale;
+  }
+  const nodes = Array.isArray(data?.nodeResults) ? [...data.nodeResults].reverse() : [];
+  for (const node of nodes) {
+    const type = node?.nodeConfig?.type;
+    if (type !== 'outcome' && type !== 'reasoning') continue;
+    const text = outputToText(node?.nodeExecutionResults?.output);
+    if (text.trim()) return text;
+  }
+  return '';
+}
+
+function renderAwaitingInput(data) {
+  const defs = Array.isArray(data?.missingFactDefinitions) ? data.missingFactDefinitions : [];
+  const items = defs.map(def => {
+    const values = Array.isArray(def.customEnumValues) && def.customEnumValues.length
+      ? `<br><small>Options: ${escapeHtml(def.customEnumValues.join(', '))}</small>`
+      : '';
+    return `<li><strong>${escapeHtml(def.label || 'Missing fact')}</strong>: ${escapeHtml(def.instructions || 'Please provide more information.')}${values}</li>`;
+  }).join('');
+  appendHtmlMessage('bot', `
+    <div class="status-card">
+      <strong>OpenJustice needs more information</strong>
+      <p>The run returned <strong>awaiting-input</strong>. Add these details in the intake above, then run again.</p>
+      <ul>${items || '<li>No missing fact definitions were provided.</li>'}</ul>
+    </div>
+  `);
+}
+
+async function runOpenJustice() {
+  if (isRunning) return;
+  if (!allRequiredComplete()) {
+    appendError('Complete all required selection steps before running OpenJustice.');
+    return;
+  }
+
+  const content = buildIntakeContent();
+  const payload = {
+    dialogFlowId: DIALOG_FLOW_ID,
+    model: MODEL,
+    messages: [{ content }],
+  };
+
+  appendHtmlMessage('user', 'Completed guided intake submitted to OpenJustice.');
+  const statusEl = appendStatus('Building intake...');
+  isRunning = true;
+  renderWizard();
+  showTyping(true);
+
+  try {
+    statusEl.innerHTML = '<div class="status-card">Reading local token file...</div>';
+    const auth = await authHeaderValue();
+    statusEl.innerHTML = '<div class="status-card">Calling OpenJustice...</div>';
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), API_TIMEOUT_MS);
+    let res;
+    try {
+      res = await fetch(OPENJUSTICE_RUN_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: auth,
+        },
+        body: JSON.stringify(payload),
+        signal: controller.signal,
+      });
+    } finally {
+      clearTimeout(timeoutId);
+    }
+    const rawText = await res.text();
+    let data;
+    try {
+      data = rawText ? JSON.parse(rawText) : {};
+    } catch {
+      throw new Error('OpenJustice returned a non-JSON response.');
+    }
+    if (!res.ok) {
+      throw new Error(data?.message || `OpenJustice request failed with HTTP ${res.status}.`);
+    }
+
+    statusEl.innerHTML = '<div class="status-card">Rendering report...</div>';
+    showTyping(false);
+    if (data.status === 'awaiting-input') {
+      renderAwaitingInput(data);
+      return;
+    }
+    const answer = extractAnswer(data);
+    if (!answer) throw new Error('OpenJustice response did not include a renderable final answer.');
+    appendHtmlMessage('bot', renderMarkdownLite(answer));
+  } catch (err) {
+    showTyping(false);
+    const message = err?.name === 'AbortError'
+      ? 'OpenJustice did not respond within 7 minutes. Try again with a shorter intake or use the fixture response for the backup demo.'
+      : err instanceof Error ? err.message : 'Unexpected error while calling OpenJustice.';
+    appendError(message);
+  } finally {
+    isRunning = false;
+    renderWizard();
+  }
+}
+
+document.addEventListener('click', event => {
+  const option = event.target.closest('.wizard-option');
+  if (option) {
+    setIntakeValue(option.dataset.field, option.dataset.value, option.dataset.type);
+    return;
+  }
+
+  if (event.target === backBtn) {
+    currentStep = Math.max(0, currentStep - 1);
+    renderWizard();
+  } else if (event.target === nextBtn) {
+    if (!isCurrentStepComplete()) return;
+    currentStep = Math.min(steps.length - 1, currentStep + 1);
+    renderWizard();
+  } else if (event.target === runBtn) {
+    runOpenJustice();
+  } else if (event.target === resetBtn) {
+    intake = initialIntake();
+    currentStep = 0;
+    wizardMount.innerHTML = '';
+    renderWizard();
+  } else if (event.target === demoBtn) {
+    loadDemoFacts();
   }
 });
+
+document.addEventListener('input', event => {
+  const field = event.target?.dataset?.textField;
+  if (!field) return;
+  intake[field] = event.target.value;
+  if (field !== steps[currentStep]?.id) renderWizard();
+});
+
+renderWizard();
 </script>
 
 </body>

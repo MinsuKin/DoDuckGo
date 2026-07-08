@@ -14,6 +14,10 @@ DoDuck Go is a guided complaint-triage assistant for Québec administrative judg
 
 Montreal AI x Law Hackathon 2026 — Team #16
 
+## Demo
+
+https://youtu.be/J9aBWXu4xe8
+
 ## Disclaimer
 
 DoDuck Go provides legal information and triage support only. It does not decide admissibility, file complaints, or provide legal advice.
